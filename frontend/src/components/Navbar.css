@@ -1,0 +1,59 @@
+.header-logowrap{
+    align-items: center;
+      display: flex;
+      flex-direction:row; 
+}
+
+.App-logo {
+    height: 6vmin;
+}
+
+.prueba{
+    background: #282c34;
+    height: 10vh;
+    max-width: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+}
+  
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.title {
+    width: calc(42vmin);
+    font-size: calc(3.2vmax);
+    color: #61dafb;
+}
+
+.me-auto{
+    justify-content: space-around; 
+    font-size: calc(5px + 3.4vmin);
+}
+
+.elements{
+    margin-right: 3vmin;
+}
+
+
+#navbarScrollingDropdown+ div {
+    background-color: #282c34 !important;
+    font-size: calc(3vmin);
+    width: 15vmin;
+    transform: scale(1);
+    transform-origin: top center;
+}
+
+.elementdrop{
+    color: #61dafb;
+    /* padding:1% 1% 1% 1%; */
+}

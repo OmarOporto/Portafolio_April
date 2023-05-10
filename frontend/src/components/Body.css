@@ -1,0 +1,140 @@
+.bodyprincipal{
+    width: 60%;
+    min-height: 90vh;
+}
+
+.bodytopleft{
+    background:  #b8ac92;
+    height:80vh;
+    display: flex;
+    justify-content:left;
+    overflow: hidden;
+}
+
+.bodytopleftelements{
+    background: #f3f2e3;
+    margin-top: 1%; 
+    margin-bottom: 1%; 
+    border-radius: 15px;
+}
+
+.l1left{
+    color:black;
+    list-style: none;
+    font-size: calc(5vmin);
+    display: flex;
+    justify-content:left;
+}
+
+.i_Diploma{
+    margin-left: 2vmin;
+    width: 5vmin;
+    height: 5vmin;
+}
+
+#i_Estudies{
+    margin-left: 2vmin;
+    width: 5vmin;
+    height: 5.5vmin;
+}
+
+#arrow{
+    width: 4vmin;
+    height: 4vmin;
+}
+
+.rotate{
+    margin: 0;
+}
+.rotate2{
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .rotate {
+      animation: rotateR linear 0.5s;
+      animation-fill-mode: forwards;
+    }
+    .rotate2 {
+        animation: rotateL linear 0.5s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes rotateR {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+}
+
+@keyframes rotateL {
+    from {
+      transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+}
+
+#prueba{
+    display: none;
+}
+
+#prueba2{
+    display: none;
+}
+
+#prueba3{
+    display: none;
+}
+
+#prueba4{
+    display: none;
+}
+
+#arrow2{
+    width: 4vmin;
+    height: 4vmin;
+}
+
+#arrow3{
+    width: 4vmin;
+    height: 4vmin;
+}
+
+#arrow4{
+    width: 4vmin;
+    height: 4vmin;
+}
+.H1{
+    position: absolute;
+    color: grey;
+    bottom: 14vh;
+    font-size: calc(2.7vmin);
+    width:60vw;
+    left:-1vw;
+
+}
+
+.bodyright{
+    background: #b8ac92;
+    position: absolute;
+    left:60%;
+    top:10vh;
+    height: 90vh;
+    width:40vw;
+    overflow: hidden;
+}
+
+.bodybottomleft{
+    background:  #706160;
+    position: absolute;
+    left:0vw;
+    top:90vh;
+    height: 10vh;
+    width:60%;
+    justify-content: center;
+}

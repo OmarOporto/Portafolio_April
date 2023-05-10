@@ -1,0 +1,81 @@
+.Show{
+    margin-top: 2.5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.Linkedin{
+    font-size: calc(2.5vmin);
+    text-decoration: none;
+    color: white;
+    margin-right: -0.75vw;
+}
+
+.Linkedin:hover{
+    color: gray;
+}
+
+.Whats{
+    font-size: calc(2.5vmin);
+    display: block;
+    color: white;
+    margin-right: -0.75vw;
+}
+
+.Correo{
+    font-size: calc(2.5vmin);
+    text-decoration: none;
+    color: white;
+    margin-right: -0.75vw;
+}
+
+.Correo:hover{
+    color: gray;
+}
+
+.Git{
+    font-size: calc(2.5vmin);
+    text-decoration: none;
+    color: white;
+    margin-right: -0.75vw;
+}
+
+.About{
+    text-decoration: none;
+    color: black;
+    margin-right: -0.75vw;
+}
+
+.About:hover{
+    color: grey;
+    
+}
+
+.Git:hover{
+    color: grey;
+    
+}
+
+#i_Contact{
+    width: 4vmin;
+    height: 4vmin;
+    margin-left: 5vmin;
+}
+
+#i_Whatsapp{
+    width: 4vmin;
+    height: 4vmin;
+    margin-left: 5vmin;
+}
+
+#i_Mail{
+    width: 4vmin;
+    height: 4vmin;
+    margin-left: 5vmin;
+}
+
+#i_Github{
+    width: 4vmin;
+    height: 4vmin;
+    margin-left: 5vmin;
+}

@@ -1,0 +1,139 @@
+.carousel{
+    background: #b8ac92;
+}
+.d-block w-100{
+    height: 95%;
+    width: 95%;
+}
+.i0{
+    margin-top: calc(90vh/2 - 40vh/2);
+    height: 40vh;
+}
+
+.link_iop{
+    text-decoration: none;
+    font-size: calc(3vmin);
+}
+
+.H4_IOP{
+    background-color:#c8cbbe;
+    font-size: calc(3vmin);
+}
+
+.H4_upb{
+    color: black;
+    background-color:powderblue;
+    font-size: calc(3vmin);
+}
+
+.p_upb{
+    color: black;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    background-color:powderblue;
+    font-size: calc(2.6vmin);
+}
+
+.a_usip{
+    position: absolute;
+    top: 0;
+}
+
+.link_usip{
+    /* margin-left: 55vh; */
+    font-size: calc(3vmin);
+    text-decoration: none;
+    color: black;
+    background-color: rgb(58, 173, 234);
+}
+
+.link_fullstack{
+    /* margin-left: 55vh; */
+    font-size: calc(2.5vmin);
+    text-decoration: none;
+    color: black;
+    background-color: rgb(58, 173, 234);
+}
+
+.british{
+    font-size: calc(3.2vmin);
+    background-Color:grey; 
+    margin-left:5vh; 
+    margin-right:5vh;
+}
+
+.unam1{
+    font-size: calc(2.8vmin);
+    margin-left: 10vh;
+    margin-right: 10vh;
+    background-color:grey;
+}
+
+.unam{
+    font-size: calc(2.5vmin);
+    margin-left: 20vh;
+    margin-right: 20vh;
+    background-color:grey;
+}
+
+.a_react{
+    position: absolute;
+    top: 5vh;
+}
+
+.react{
+    color: black;
+    font-size: 3vh;
+    background-color: rgb(58, 173, 234);
+}
+
+.H4_React{
+    font-size: calc(3vmin);
+    background-color:"grey";
+     margin-left:"5vh"; 
+     margin-right:"5vh";
+}
+
+.docker{
+    color: black;
+    font-size: 3vh;
+    background-color: grey;
+    margin-left: 8vh;
+    margin-bottom: 8vh;
+}
+
+#ir1{
+    margin-top: 2vh;
+    height: 86vh; 
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .i0{
+        animation-name: parpadeo;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      
+        -webkit-animation-name:parpadeo;
+        -webkit-animation-duration: 6s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+    }
+}      
+@-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.1; }
+    100% { opacity: 1.0; }
+}
+      
+@-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.1; }
+    100% { opacity: 1.0; }
+}
+      
+@keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.1; }
+    100% { opacity: 1.0; }
+}

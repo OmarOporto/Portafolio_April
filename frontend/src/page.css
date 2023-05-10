@@ -1,0 +1,175 @@
+.Calc {
+    text-align: center;
+}
+  
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+  
+.App-header {
+    background-color: #434a57;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .Casio {
+    width: 510px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 10px ridge #878786;
+  }
+  
+  .row {
+    display: flex;
+    width: 100%;
+  }
+  
+  .button-wrapper {
+    user-select: none;
+    cursor: pointer;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    font-size: 1.4em;
+    background-color: #e0e1e6;
+    color: #888;
+    flex: 1;
+    outline: 1px solid #888;
+  }
+  
+  .operator {
+    background-color: #389e45;
+    color: white;
+  }
+  
+  .equal-btn {
+    user-select: none;
+    cursor: pointer;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 1.4em;
+    background-color: #c5c3cd;
+    color: #000000;
+    flex: 1;
+    outline: 1px solid #888888;
+  }
+
+.input {
+  height: 2em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  background-color: #000000;
+  color: #fafafa;
+  padding: 0.5em;
+  outline: 1px solid #888888;
+}
+
+.M_Center{
+  width: 100vw;
+  height: 90vh;
+  background-color: #434a57;
+  overflow: hidden;
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  min-width: 25vw;
+  min-height: 55vh;
+  max-width: 30vw;
+  max-height: 70vh;
+  border: calc(4px + 1vmin) solid #1E679A;  
+  background-color: #4d5360;
+  overflow-y: scroll;
+}
+
+.login::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.login {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+.h1_log{
+  position: flex;
+  width: calc(42vmin);
+}
+
+.h1_log1{
+  font-size: calc(6vmin);
+}
+
+.paralelogramo{
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  width: 20vw;
+  height: 20vh;
+  background-color: rgb(172, 140, 124);
+  transform: skew(20deg);
+  font-size: calc(2.7vmin);
+}
+
+.paralelogramo2{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 15vw;
+  height: 20vh;
+  background-color: rgb(127, 214, 255);
+  font-size: calc(2.7vmin);
+}
+
+.labeli{
+  font-size: calc(2px+ 2.1vmin);
+}
+
+.labelq{
+  font-size: calc(2px+2vmin);
+}
+
+.Phone_Container{
+  background-color: cyan;
+  width: 100%;
+  justify-content: start;
+}

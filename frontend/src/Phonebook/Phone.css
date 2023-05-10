@@ -1,0 +1,76 @@
+.Phonebook{
+    background-color: cyan;
+    width: 100%;
+    height: 90vmin;
+    align-items: center;
+}
+#mb-3{
+    font-size: calc(3vmin);;
+}
+
+#filt_bar{
+    width: 30vw;
+}
+
+#Addinfo_phone{
+    position: absolute;
+    left:60%;
+    top:30vh;
+    width:28vw;
+    min-height: 30vh; 
+}
+
+#Edit_phone{
+    position: absolute;
+    left:60%;
+    top:30vh;
+    width:28vw;
+    min-height: 30vh; 
+}
+
+#title_h3_phonebook{
+    /* background-color: cyan; */
+    left: 15vw;
+    width: 30vw;    
+}
+.book{
+    position: absolute;
+    left: 0;
+    border: solid 5px black;
+    width: 45vw;
+    max-height: 50vh;
+    
+    background-color: greenyellow;
+    justify-items: start;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    margin-left: 4vw;
+}
+
+.book::-webkit-scrollbar {
+    display: none;
+}
+
+#ul{
+    /* background-color: cyan; */
+    position: flex;
+    left: 0vw;
+    list-style: none;
+    width: 40vw;
+}
+
+.book_item{
+    position: relative;
+    background-color: greenyellow;
+    left: 10%;
+    width: 35vw;
+}
+
+.Phone_Button{
+    width: 4.5vw;
+}
+
+.Card_Header{
+    font-size: calc(3vmin);;
+}
