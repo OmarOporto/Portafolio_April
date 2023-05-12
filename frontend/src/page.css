@@ -155,7 +155,7 @@ scrollbar-width: none;  /* Firefox */
   top: 40%;
   left: 10%;
   width: 15vw;
-  height: 20vh;
+  height: 23vh;
   background-color: rgb(127, 214, 255);
   font-size: calc(2.7vmin);
 }

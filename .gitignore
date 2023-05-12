@@ -1,0 +1,8 @@
+
+backend/node_modules
+backend/.env   
+frontend/node_modules
+
+#Production
+backend/build
+frontend/build

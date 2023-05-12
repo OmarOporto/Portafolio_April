@@ -7,16 +7,16 @@ const getAll = () => {
   return request.then(response => response.data)
 }
 
-const add = noteObject => {
-  const request = axios.post(URL,noteObject)
+const add = async noteObject => {
+  const request = await axios.post(URL,noteObject)
 
-  return request.then(res => res.data)
+  return request.data
 }
 
-const del = id => {
-  const request = axios.delete(`${URL}/${id}`)
+const del = async id => {
+  const request = await axios.delete(`${URL}/${id}`)
 
-  return request.then(res => res.data)
+  return request.data
 }
 
 const update = (id, newObject, sameName, newEmail) => {

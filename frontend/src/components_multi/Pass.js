@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Card from 'react-bootstrap/Card'
 
 import './Login.css'
@@ -33,7 +34,8 @@ function Trail(){
         <Card.Body>
           <Card.Title> Phonebook </Card.Title>
           <Card.Text>
-                    A simple Page of an Phonebook, with a Database on <b>Mongoose</b>
+                    A simple Page of an Phonebook, with a Database on <b>Mongoose</b><br/>
+                    <Link to='/multi/pass/phonebook'>Go to the Page</Link>
           </Card.Text>
         </Card.Body>
       </Card>

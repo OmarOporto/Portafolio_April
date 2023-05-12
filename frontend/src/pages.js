@@ -58,7 +58,7 @@ function Multi(){
       <div className="M_Center">
         <div className="paralelogramo2">
           <b>Information Default:<br/>
-            <br/>Username: Omar <br/>
+            <br/>Username: omar <br/>
         Password: password2</b>
         </div>
         <div className="paralelogramo">

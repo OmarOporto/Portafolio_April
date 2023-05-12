@@ -3,7 +3,7 @@ const Person = require('../models/person')
 
 personRouter.get('/', (request, response) => {
     Person.find({}).then(persons => {
-      response.json(persons)
+      response.status(200).json(persons)
     })
   })
 
@@ -48,7 +48,7 @@ personRouter.get('/:id', (request, response, next) => {
     Person.findById(request.params.id)
       .then(note => {
         if (note) {
-          response.json(note)
+          response.status(200).json(note)
         } else {
           response.status(404).end()
         }
@@ -65,7 +65,7 @@ personRouter.put('/:id', (request, response, next) => {
         { new: true, runValidators: true, context: 'query' }
       )
       .then(updatedPerson => {
-        response.json(updatedPerson)
+        response.status(201).json(updatedPerson)
       })
       .catch(error => next(error))
     }
@@ -76,7 +76,7 @@ personRouter.put('/:id', (request, response, next) => {
         { new: true, runValidators: true, context: 'query' }
       )
       .then(updatedPerson => {
-        response.json(updatedPerson)
+        response.status(201).json(updatedPerson)
       })
       .catch(error => next(error))
     }  

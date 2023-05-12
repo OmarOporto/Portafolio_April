@@ -36,10 +36,9 @@ const Represent = ({ val }) =>
             alt="First slide"
           />
           <Carousel.Caption >
-            <h4 className="H4_IOP">
-              <b>Design and construction of a low-cost 3D-printed portable LIBS system
-              </b></h4>
+            <h4 className="H4_IOP"><b>Design and construction of a low-cost 3D-printed portable LIBS system</b></h4>
             <a href="https://iopscience.iop.org/article/10.1088/1742-6596/2238/1/012012" className="link_iop" target="_blank" rel="noreferrer">
+              {/* eslint-disable-next-line */}
                                 "IOP - PAGE"
             </a>
           </Carousel.Caption>
