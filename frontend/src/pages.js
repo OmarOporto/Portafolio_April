@@ -1,5 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
+import Accordion from 'react-bootstrap/Accordion';
+import Container from 'react-bootstrap/Container'
+
 import './page.css'
 import logo from './logo.svg'
 import Maintop from './components/Navbar'
@@ -55,12 +58,18 @@ function Multi(){
   return(
     <div>
       <Maintop/>
-      <div className="M_Center">
-        <div className="paralelogramo2">
-          <b>Information Default:<br/>
-            <br/>Username: omar <br/>
-        Password: password2</b>
-        </div>
+      <div className="M_Center"> 
+        <Container className="paralelogramo2">
+          <Accordion defaultActiveKey="0">
+            <Accordion.Item eventKey="1" className="paralelo2">
+              <Accordion.Header> Information Default:</Accordion.Header>
+              <Accordion.Body>
+                <b>Username: omar <br/>
+                Password: password2</b>
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion> 
+        </Container>
         <div className="paralelogramo">
           <b>This is an EXAMPLE page <br/>
         Don't Use <br/>REAL <br/>Information</b>

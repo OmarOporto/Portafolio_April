@@ -59,7 +59,7 @@ function Contact(){
       <img src={require('./images/Whatsapp.png')} id="i_Whatsapp" onMouseEnter={handleMouseEnter2} onMouseLeave={handleMouseLeave} alt="Imagen"></img>
       {showText2 && <p className="Whats">&#160;&#160;&#160; 63968723 &#160;</p>}
       <img src={require('./images/Github.png')} id="i_Github" onMouseEnter={handleMouseEnter4} onMouseLeave={handleMouseLeave} alt="Imagen"></img>
-      {showText4 && <a href="https://github.com/OmarOporto" className="Git" target="_blank" rel="noreferrer">&#160; Github of this page</a>}
+      {showText4 && <a href="https://github.com/OmarOporto" className="Git" target="_blank" rel="noreferrer">&#160; Github LINK</a>}
       <img src={require('./images/Email.png')} id="i_Mail" onMouseEnter={handleMouseEnter3} onMouseLeave={handleMouseLeave} alt="Imagen"></img>
       {showText3 && <a href="mailto:omar.oportober@gmail.com" className="Correo">
                 &#160; omar.oportober@gmail.com

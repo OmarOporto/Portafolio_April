@@ -145,18 +145,30 @@ scrollbar-width: none;  /* Firefox */
   left: 70%;
   width: 20vw;
   height: 20vh;
-  background-color: rgb(172, 140, 124);
+  background-color: rgb(145, 35, 35);
   transform: skew(20deg);
   font-size: calc(2.7vmin);
 }
 
 .paralelogramo2{
   position: absolute;
+  display: flex;
   top: 40%;
   left: 10%;
-  width: 15vw;
-  height: 23vh;
-  background-color: rgb(127, 214, 255);
+  max-width: 16vw;
+  background-color: #434a57;
+  overflow-x: hidden;
+}
+
+#accordion-header{
+  background-color: #6f96ea;
+  color: #000000;
+  font-size: calc(2.7vmin);
+}
+
+.paralelo2{
+  background-color: #6f96ea;
+  color: #000000;
   font-size: calc(2.7vmin);
 }
 
@@ -169,7 +181,7 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .Phone_Container{
-  background-color: cyan;
+  background-color: rgb(13, 125, 125);
   width: 100%;
   justify-content: start;
 }

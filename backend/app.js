@@ -47,13 +47,6 @@ const unknownEndpoint = (request, response) => {
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.json())
 
-app.get('/info', (request, response) => {
-    const res = `
-    <p>Pagina de Prueba de Portafolio</p>
-    `
-    response.send(res)
-})
-
 app.get('/', (req, res) => { res.sendFile(path.join(__dirname, 'build', 'index.html')) })
 app.get('/about', (req, res) => { res.sendFile(path.join(__dirname, 'build', 'index.html')) })
 app.get('/calculadora', (req, res) => { res.sendFile(path.join(__dirname, 'build', 'index.html')) })

@@ -92,11 +92,11 @@ const Phone_App = () => {
 
   return (
     <Container className="Phonebook">
-      <h1>Phonebook</h1><br/><br/>
+      <h1><u>Phonebook</u></h1><br/><br/>
       <Notification message={errorMessage} selected={selected}/>
       <Filter filter={filter} handleFilter={handleChange(setFilter)}/><br/>
       <Addinfo updateName={updateName} setErrorMessage={setErrorMessage} Name={Name}/>
-      <h3 id="title_h3_phonebook">Contacts<br/></h3>
+      <h3 id="title_h3_phonebook">Your contacts<br/></h3>
       <Container className="book">
         <Col id="ul">
           {Name.sort((a, b) => a.name.localeCompare(b.name)).map(note =>
