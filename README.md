@@ -18,6 +18,14 @@ Displays a Curriculim Vitae like summary of the author.
 
 Contains a section with generic interview questions.
 
+### Comming Soon
+
+Not yet accessible. (programming exercises)
+
+### Calculator
+
+A common scientific calculator
+
 ### Multiapp Sub-application
 
 Includes a custom-designed Login API.
