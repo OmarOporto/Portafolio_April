@@ -1,13 +1,14 @@
 const personRouter = require('express').Router()
 const Person = require('../models/person')
 
-personRouter.get('/', (request, response) => {
-    Person.find({}).then(persons => {
-      response.status(200).json(persons)
-    })
+personRouter.get('/', async (request, response)  => {
+
+  const persons = await Person
+    .find({})
+  response.status(200).json(persons)
   })
 
-personRouter.post('/', (request, response, next) => {
+personRouter.post('/', async (request, response) => {
     const body = request.body
   
     if (!body.name && !body.number) {
@@ -29,56 +30,51 @@ personRouter.post('/', (request, response, next) => {
       })
     }
 
-    person
-      .save()
-      .then(per => {response.json(per)})
-      .catch(error => next(error))
+    const savedPerson = await person.save()
+
+    response.status(201).json(savedPerson)
   
 })
 
-personRouter.delete('/:id', (request, response, next) => {
-    Person.findByIdAndRemove(request.params.id)
-      .then(() => {
-        response.status(204).end()
-      })
-      .catch(error => next(error))
+personRouter.delete('/:id', async (request, response) => {
+    await Person.findByIdAndRemove(request.params.id)  
+    response.status(204).end()    
 })
 
-personRouter.get('/:id', (request, response, next) => {
-    Person.findById(request.params.id)
-      .then(note => {
-        if (note) {
-          response.status(200).json(note)
-        } else {
-          response.status(404).end()
-        }
-      })
-      .catch(error => next(error))
+personRouter.get('/:id', async (request, response) => {
+    const person = await Person.findById(request.params.id)
+    if (person) {
+      response.status(200).json(person)
+    } else {
+      response.status(404).end()
+    }
 })
 
-personRouter.put('/:id', (request, response, next) => {
-    const { name , number, email } = request.body
+personRouter.put('/:id', async (request, response) => {
+    let { name , number, email } = request.body
+
+    const prev = await Person.findById(request.params.id) 
+
+    if(name === 'undefined'  || name == "") name = prev.name
+    if(number === 'undefined' || number == "") number = prev.number
+
     if (email==='' || email){
-      Person.findByIdAndUpdate(
+
+      await Person.findByIdAndUpdate(
         request.params.id,
-        { name, number},
+        { name , number},
         { new: true, runValidators: true, context: 'query' }
       )
-      .then(updatedPerson => {
-        response.status(201).json(updatedPerson)
-      })
-      .catch(error => next(error))
+      response.status(201).json({ name , number})
+     
     }
     else{
-      Person.findByIdAndUpdate(
+      await Person.findByIdAndUpdate(
         request.params.id,
         { name, number, email },
         { new: true, runValidators: true, context: 'query' }
       )
-      .then(updatedPerson => {
-        response.status(201).json(updatedPerson)
-      })
-      .catch(error => next(error))
+      response.status(201).json({ name , number, email})
     }  
 })
 

@@ -1,5 +1,5 @@
 .Phonebook{
-    background-color: rgb(13, 125, 125);
+    background-color: #659AA6;
     width: 100%;
     height: 90vmin;
     align-items: center;
@@ -15,7 +15,7 @@
 #Addinfo_phone{
     position: absolute;
     left:60%;
-    top:30vh;
+    top:40vh;
     width:28vw;
     min-height: 30vh; 
 }
@@ -23,7 +23,7 @@
 #Edit_phone{
     position: absolute;
     left:60%;
-    top:30vh;
+    top:40vh;
     width:28vw;
     min-height: 30vh; 
 }
@@ -36,11 +36,11 @@
 .book{
     position: absolute;
     left: 0;
-    border: solid 5px black;
-    width: 45vw;
-    max-height: 52vh;
+    border: solid 5px #013440;
+    width: 42vw;
+    max-height: 53vh;
     
-    background-color: rgb(91, 136, 23);
+    background-color:#659AA6;
     justify-items: start;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -63,8 +63,7 @@
 
 .book_item{
     position: relative;
-    background-color: greenyellow;
-    left: 10%;
+    left: 2.5vw;
     width: 35vw;
 }
 

@@ -1,6 +1,7 @@
 .label_p{
     font-weight: bold;
-    font-size: calc(4px + 2.3vmin);
+    color:rgb(56, 55, 55);
+    font-size: calc(4px + 2vmin);
 }
 
 .label_p2{
@@ -9,7 +10,7 @@
 }
 
 #Backgraound_Pass{
-    background-color: rgb(65, 61, 61);
+    background-color:#025159;
     color:white;
     width: 100%;
     height: 90vh;

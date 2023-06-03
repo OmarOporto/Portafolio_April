@@ -20,7 +20,7 @@ function Trail(){
   const [hover2, setHover2] = useState(false)
   return(
     <div id="Backgraound_Pass">
-      <h1><br/><b><u>Choose an App {log.username}</u></b></h1>
+      <h1><br/><b><u>Choose an App "{log.username}"</u></b></h1>
       <Card
         bg={(!hover) ? 'dark' : 'secondary'}
         key="Card"

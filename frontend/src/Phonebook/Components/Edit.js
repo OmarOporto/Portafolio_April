@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import doThings from '../Sources/persons'
 
 import Button from 'react-bootstrap/Button'
@@ -19,6 +19,18 @@ const Edition = (props) => {
   const [errorMessage, setErrorMessage] = useState(null)
 
   const handleChange = setValue => a => setValue(a.target.value)
+
+  const showhide = (event) => {
+
+    event.preventDefault()
+
+    var y = document.getElementById('Edit_phone')
+    var x = document.getElementById('Addinfo_phone')
+    
+    y.style.display = 'none'
+    x.style.display = 'block'
+
+  }
 
   const editInfo = async (event) => {
     event.preventDefault()
@@ -88,7 +100,8 @@ const Edition = (props) => {
             </Col>
           </Form.Group>
 
-          <Button type="submit" variant="info">Edit</Button>
+          <Button type="submit" variant="info">Edit</Button>&#160;
+          <Button onClick={showhide} variant="info">Cancel</Button>
         </Form>
       </Card.Body>
     </Card>

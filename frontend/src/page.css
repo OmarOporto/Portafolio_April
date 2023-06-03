@@ -101,7 +101,7 @@
 .M_Center{
   width: 100vw;
   height: 90vh;
-  background-color: #434a57;
+  background-color: #025159;
   overflow: hidden;
 }
 
@@ -115,8 +115,8 @@
   min-height: 55vh;
   max-width: 30vw;
   max-height: 70vh;
-  border: calc(4px + 1vmin) solid #1E679A;  
-  background-color: #4d5360;
+  border: calc(4px + 1vmin) solid #013440;  
+  background-color:#B4D2D9;
   overflow-y: scroll;
 }
 
@@ -141,11 +141,13 @@ scrollbar-width: none;  /* Firefox */
 
 .paralelogramo{
   position: absolute;
+  color: #fafafa;
   top: 40%;
   left: 70%;
   width: 20vw;
   height: 20vh;
-  background-color: rgb(145, 35, 35);
+  border: calc(1px + 0.5vmin) solid #013440; 
+  background-color: #3098a3;
   transform: skew(20deg);
   font-size: calc(2.7vmin);
 }
@@ -155,8 +157,8 @@ scrollbar-width: none;  /* Firefox */
   display: flex;
   top: 40%;
   left: 10%;
-  max-width: 16vw;
-  background-color: #434a57;
+  max-width: 18vw;
+  background-color: #025159;
   overflow-x: hidden;
 }
 
@@ -181,7 +183,7 @@ scrollbar-width: none;  /* Firefox */
 }
 
 .Phone_Container{
-  background-color: rgb(13, 125, 125);
+  background-color: #659AA6;
   width: 100%;
   justify-content: start;
 }

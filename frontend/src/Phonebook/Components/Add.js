@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react'
+import { useState } from 'react'
 import doThings from '../Sources/persons'
 
 import Col from 'react-bootstrap/Col'
@@ -20,7 +20,7 @@ const Addinfo =(props) =>{
   const handleAdd = async (event) =>
   {
     event.preventDefault()
-    console.log(Name.length +"_________________") 
+    //console.log(Name.length +"_________________") 
     try{
       const person = Name.find(person => person.name ===newName)
 
@@ -81,7 +81,7 @@ const Addinfo =(props) =>{
 
   const handleChange = setValue => a => setValue(a.target.value)
   
-    return(
+  return(
     <Card
       bg="primary"
       text="white"

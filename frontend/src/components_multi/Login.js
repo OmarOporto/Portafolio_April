@@ -59,9 +59,10 @@ function Log() {
         </Form.Text>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <div><Form.Label className="label_p">Password &#160;&#160;&#160;</Form.Label>
-          <EyeC onClick={toggleVisibility} style={hideWhenVisible}/>
-          <Eye onClick={toggleVisibility} style={showWhenVisible}/>
+        <div><Form.Label className="label_p">Password &#160;&#160;&#160;
+              <EyeC onClick={toggleVisibility} style={hideWhenVisible}/>
+              <Eye onClick={toggleVisibility} style={showWhenVisible}/>
+            </Form.Label>
         </div>
         <Form.Control
           className="labeli" type={type.display} placeholder="Password" value={password} name="Password"

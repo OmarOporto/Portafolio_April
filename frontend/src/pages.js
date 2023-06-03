@@ -64,8 +64,8 @@ function Multi(){
             <Accordion.Item eventKey="1" className="paralelo2">
               <Accordion.Header> Information Default:</Accordion.Header>
               <Accordion.Body>
-                <b>Username: omar <br/>
-                Password: password2</b>
+                <b>Username: usuario<br/>
+                Password: password4</b>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion> 

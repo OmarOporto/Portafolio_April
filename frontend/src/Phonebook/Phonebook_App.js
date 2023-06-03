@@ -92,7 +92,7 @@ const Phone_App = () => {
 
   return (
     <Container className="Phonebook">
-      <h1><u>Phonebook</u></h1><br/><br/>
+      <br/><h1><u>Phonebook</u></h1><br/>
       <Notification message={errorMessage} selected={selected}/>
       <Filter filter={filter} handleFilter={handleChange(setFilter)}/><br/>
       <Addinfo updateName={updateName} setErrorMessage={setErrorMessage} Name={Name}/>
