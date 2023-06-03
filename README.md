@@ -6,7 +6,7 @@ Omar Oporto Bernal
 
 ## Description
 
-The Portfolio app is a web platform that showcases a Curriculum Vitae like summary and provides relevant information about the author. It includes a section with generic interview questions with personal answers from the author.
+The Portfolio app is a web platform that showcases a Curriculum Vitae like summary and provides relevant information about the author. It includes a section with generic interview questions with personal answers from the author. The "backend" field contains all the files for the application, the "frontend" folder is there only to be able to appreciate the complete code
 
 ## Features
 
@@ -17,6 +17,14 @@ Displays a Curriculim Vitae like summary of the author.
 ### About Section
 
 Contains a section with generic interview questions.
+
+### Comming Soon
+
+Not yet accessible. (programming exercises)
+
+### Calculator
+
+A common scientific calculator
 
 ### Multiapp Sub-application
 
