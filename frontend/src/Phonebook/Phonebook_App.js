@@ -14,8 +14,8 @@ import './Phone.css'
 const Filter = ({ filter,handleFilter }) =>
   (
     <Form.Group as={Row} id="mb-3" controlId="Filter">
-      <Form.Label column sm="2">
-        <b>Filter shown with</b>
+      <Form.Label column sm="2" id = "filterName">
+        <b>Filter shown with:</b>
       </Form.Label>
       <Col sm="3" id="filt_bar">
         <Form.Control type="text" placeholder="Search" value ={filter ||''} onChange={handleFilter}/>
@@ -87,8 +87,6 @@ const Phone_App = () => {
     v.style.display = 'none'
     z.style.display = 'block' 
   }
-  
-  console.log(Name.length +"------------!!!!")
 
   return (
     <Container className="Phonebook">

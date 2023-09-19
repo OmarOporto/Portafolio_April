@@ -1,3 +1,4 @@
+//September edit
 const config = require('./utils/config')
 const express = require('express')
 const app = express()
@@ -7,7 +8,6 @@ const loginRouter = require('./controllers/login')
 const usersRouter = require('./controllers/user')
 const personRouter = require('./controllers/person')
 const logger = require('./utils/logger')
-//require('dotenv').config()
 const mongoose = require('mongoose')
 
 require('express-async-errors')

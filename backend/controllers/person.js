@@ -29,11 +29,19 @@ personRouter.post('/', async (request, response) => {
         email: body.email,
       })
     }
-
+    try {
+      await person.save()
+    } catch (err) {
+      // La validación falló
+      console.log(err);
+      // Devuelve un mensaje de error al usuario
+      return response.status(422).json({
+        error: err.message,
+      });
+    }
     const savedPerson = await person.save()
-
     response.status(201).json(savedPerson)
-  
+
 })
 
 personRouter.delete('/:id', async (request, response) => {

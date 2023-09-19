@@ -68,6 +68,11 @@ const Addinfo =(props) =>{
             setTimeout(() => {
               setErrorMessage(null)
             }, 2000)
+          }).catch(error=> {
+            setErrorMessage(`Datos en Formato Invalido ${error}`)
+            setTimeout(() => {
+              setErrorMessage(null)
+            }, 5000)
           })
       }
     }

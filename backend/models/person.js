@@ -29,6 +29,15 @@ const personSchema = new mongoose.Schema({
     },
   })
 
+personSchema.pre('save', async function(next) {
+  try {
+    await this.validate({ validateBeforeSave: true });
+    next();
+  } catch (err) {
+    next(err);
+  }
+});
+
 personSchema.set('toJSON', {
     transform: (document, returnedObject) => {
       returnedObject.id = returnedObject._id.toString()
